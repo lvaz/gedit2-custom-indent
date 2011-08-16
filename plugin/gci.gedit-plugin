@@ -1,0 +1,10 @@
+[Gedit Plugin]
+Loader=python
+Module=gci
+IAge=2
+Name=Custom Indent
+Description=Custom indentation settings for different languages
+Authors=Leandro Vaz <leandrofppv@gmail.com>
+Copyright=Copyright © 2011 Leandro Vaz
+Website=http://www.gedit.org
+Version=0.1
