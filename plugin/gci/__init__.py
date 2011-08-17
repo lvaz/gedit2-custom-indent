@@ -18,9 +18,25 @@
 
 import gedit
 import settings
-from gcipluginhelper import GciPluginHelper
+import utils
 from dialogs.config import ConfigDialog
 
+
+class GciPluginHelper(object):
+
+    def __init__(self, window):
+        self._window = window
+        self._window.connect('tab-added', self.on_tab_added)
+        
+        utils.apply_settings_to_documents(window)
+
+    def on_tab_added(self, window, tab):
+        doc = tab.get_document()
+        doc.connect('loaded', self.on_document_loaded)
+
+    def on_document_loaded(self, doc, error):
+        utils.apply_settings_to_document(doc)
+       
 
 class GciPlugin(gedit.Plugin):
 
