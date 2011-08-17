@@ -24,7 +24,16 @@ This plugin aims to aid developers that usually work with many different languag
 their own indent and tab settings per language. It manages your indentation settings in gedit, in the instant
 that it's activated, it instantly overrides your gedit indent and tab settings and applies the settings to all
 opened documents. All changes made in the plugin configuration dialog are instantly applied to opened documents too, you
-don't need to restart gedit.
+don't need to restart gedit. Finally, all settings are permanently stored, you don't need to apply them each time
+you start gedit.
+
+
+Updating
+-------
+
+When you want to update to a new version, you should delete the old plugin and download the new one, then just
+follow the instructions written on "Installation". Your old settings will be lost, if you want to keep them, you need to
+backup "data/" folder before deleting the old plugin, then install the new version and paste your backup on the new plugin folder.
 
 
 License
