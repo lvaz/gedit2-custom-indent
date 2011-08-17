@@ -17,6 +17,16 @@ Installation
 4. Activate the plugin under 'Edit -> Preferences -> Plugins'
 
 
+Usage
+-----
+
+This plugin aims to aid developers that usually work with many different languages and like to customize
+their own indent and tab settings per language. It manages your indentation settings in gedit, in the instant
+that it's activated, it instantly overrides your gedit indent and tab settings and applies the settings to all
+opened documents. All changes made in the plugin configuration dialog are instantly applied to opened documents too, you
+don't need to restart gedit.
+
+
 License
 -------
 
