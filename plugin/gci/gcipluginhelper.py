@@ -27,8 +27,6 @@ class GciPluginHelper(object):
     def __init__(self, window):
         self._window = window
         self._window.connect('tab-added', self.on_tab_added)
-
-    def activate(self):
         utils.apply_settings_to_documents(window)
 
     def on_tab_added(self, window, tab):
