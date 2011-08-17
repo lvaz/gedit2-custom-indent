@@ -5,7 +5,7 @@ A plugin for gedit that allows to customize indent and tab settings per language
 
 * Authors:
   * Leandro Vaz
-* Version: 0.1
+* Version: 0.1.1
 
 
 Installation
