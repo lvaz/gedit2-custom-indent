@@ -38,7 +38,11 @@ def init_settings(data_path):
     global _db_path
     global _db_conn
 
-    _db_path = os.path.join(data_path, 'data', 'settings.sqlite')
+    db_dir = os.path.join(data_path, 'data')
+    _db_path = os.path.join(db_dir, 'settings.sqlite')
+
+    if not os.path.exists(db_dir):
+        os.makedirs(db_dir)
 
     if not os.path.exists(_db_path):
         _db_conn = sqlite3.connect(_db_path)
